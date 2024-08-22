@@ -89,6 +89,19 @@
     onscroll(document, headerScrolled)
   }
 
+  // let selctNavbar = select('#navbar')
+  // if (selctNavbar) {
+  //   const navbarScrolled = () => {
+  //     if (window.scrollY > 100) {
+  //       selctNavbar.classList.add('.mobile-nav-toggle')
+  //     } else {
+  //       selctNavbar.classList.remove('.mobile-nav-toggle')
+  //     }
+  //   }
+  //   window.addEventListener('load', navbarScrolled)
+  //   onscroll(document, navbarScrolled)
+  // }
+
   /**
    * Back to top button
    */
