@@ -451,6 +451,7 @@ h6 {
 
 #hero .hero-text h1 {
   margin: 0 0 10px 0;
+  padding: 0 7px;
   font-size: 48px;
   font-weight: 900;
   line-height: 56px;
@@ -459,7 +460,8 @@ h6 {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(30), cursor .4s step-end infinite alternate;
+  border-right: 1px solid;
+  animation: typing 2s steps(4), cursor .6s step-end infinite alternate;
 }
 
 @keyframes cursor {
@@ -476,6 +478,7 @@ h6 {
 #hero h3 {
   color: #fff;
   font-size: 20px;
+  margin-bottom: 40px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.5px;
@@ -1419,12 +1422,12 @@ section {
   font-weight: 700;
 }
 
-#footer .footer-top .footer-contact p {
+#footer .footer-top .footer-contact .foot-text {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  color: #444444;
 }
 
 #footer .footer-top h4 {
@@ -1547,4 +1550,41 @@ section {
   background: #004ec2;
   color: #fff;
   text-decoration: none;
+}
+
+#footer .foot-logo {
+  margin-bottom: 12px;
+}
+
+#footer .foot-logo h1 {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+#footer .foot-logo h1 a .hmti-text {
+  color: #2596be;
+  transition: color 0.5s;
+}
+#footer .foot-logo h1 a .unipi-text {
+  color: #444444;
+  transition: color 0.5s;
+}
+
+#footer .foot-logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+}
+
+@media (max-width: 992px) {
+  #footer .foot-logo {
+    padding-left: 0;
+  }
+
+  #footer .foot-logo h1 {
+    font-size: 24px;
+  }
 }
