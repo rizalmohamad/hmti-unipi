@@ -1,0 +1,172 @@
+{
+  "imageGallery": [
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan/workshop1.png",
+      "name": "Workshop 2022",
+      "title": "Kegiatan Workshop 2022"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan/workshop2.jpg",
+      "name": "Workshop 2022",
+      "title": "Kegiatan Workshop 2022"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan/workshop3.jpg",
+      "name": "Workshop 2022",
+      "title": "Kegiatan Workshop 2022"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan/ldko1.jpg",
+      "name": "LDKO 2022",
+      "title": "Kegiatan LDKO 2022"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan/ldko3.jpg",
+      "name": "LDKO 2022",
+      "title": "Kegiatan LDKO 2022"
+    },
+    {
+      "category": "filter-web",
+      "pict": "assets/img/kegiatan/webinar-online1.jpeg",
+      "name": "Webinar 2022",
+      "title": "Kegiatan Webinar 2022"
+    },
+    {
+      "category": "filter-web",
+      "pict": "assets/img/kegiatan/webinar-online2.jpeg",
+      "name": "Webinar 2022",
+      "title": "Kegiatan Webinar 2022"
+    },
+    {
+      "category": "filter-web",
+      "pict": "assets/img/kegiatan/webinar-online3.jpeg",
+      "name": "Webinar 2022",
+      "title": "Kegiatan Webinar 2022"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-1.jpeg",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-2.jpeg",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-3.jpeg",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-4.jpeg",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-5.jpeg",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-6.JPG",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-7.JPG",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-8.JPG",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-9.JPG",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-ldko",
+      "pict": "assets/img/kegiatan-2024/ldko-11.jpeg",
+      "name": "LDKO 2024",
+      "title": "Kegiatan LDKO 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-1.jpg",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-2.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-3.jpeg",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-4.jpeg",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-5.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-6.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-7.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-8.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-9.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    },
+    {
+      "category": "filter-workshop",
+      "pict": "assets/img/kegiatan-2024/workshop-10.JPG",
+      "name": "Workshop 2024",
+      "title": "Kegiatan Workshop 2024"
+    }
+  ]
+}
