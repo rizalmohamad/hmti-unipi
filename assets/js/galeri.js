@@ -1,9 +1,11 @@
 // Fetch data from datagaleri.json
 
-fetch("assets/js/datagaleri.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const card = document.querySelector(".portfolio-container");
+const card = document.querySelector(".portfolio-container");
+
+async function loadGallery() {
+  try {
+    const response = await fetch("assets/js/datagaleri.json");
+    const data = await response.json();
     const imageGallery = data.imageGallery;
 
     imageGallery.forEach((image) => {
@@ -16,15 +18,21 @@ fetch("assets/js/datagaleri.json")
                 <div class="portfolio-info">
                     <h4>${name}</h4>
                     <div class="portfolio-links">
-                        <a href="${pict}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${title}"><i class="bx bx-plus"></i></a>
+                        <a href="${pict}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${title}">
+                            <i class="bx bx-plus"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
       `;
     });
+
     const lightbox = GLightbox({
       selector: ".portfolio-lightbox",
     });
-  })
-  .catch((error) => console.error("Error fetching data:", error));
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
+loadGallery();
