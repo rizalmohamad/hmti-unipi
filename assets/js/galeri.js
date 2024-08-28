@@ -1,4 +1,5 @@
 // Fetch data dari datagaleri.json
+document.addEventListener("DOMContentLoaded", loadGallery);
 
 const card = document.querySelector(".portfolio-container");
 
@@ -7,7 +8,7 @@ async function loadGallery() {
     const response = await fetch("assets/js/datagaleri.json");
     const data = await response.json();
     const imageGallery = data.imageGallery;
-    console.log(imageGallery)
+    console.log(imageGallery);
 
     imageGallery.forEach((image) => {
       const { category, pict, name, title } = image;
@@ -28,6 +29,16 @@ async function loadGallery() {
         </div>
       `;
     });
+
+    const images = document.querySelectorAll(".portfolio-wrap img");
+    const promises = Array.from(images).map(
+      (img) =>
+        new Promise((resolve) => {
+          img.onload = resolve;
+        })
+    );
+
+    await Promise.all(promises);
 
     const lightbox = GLightbox({
       selector: ".portfolio-lightbox",
