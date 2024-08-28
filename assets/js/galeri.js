@@ -1,4 +1,4 @@
-// Fetch data from datagaleri.json
+// Fetch data dari datagaleri.json
 
 const card = document.querySelector(".portfolio-container");
 
@@ -7,6 +7,7 @@ async function loadGallery() {
     const response = await fetch("assets/js/datagaleri.json");
     const data = await response.json();
     const imageGallery = data.imageGallery;
+    console.log(imageGallery)
 
     imageGallery.forEach((image) => {
       const { category, pict, name, title } = image;
