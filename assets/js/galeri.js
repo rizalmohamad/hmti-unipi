@@ -234,4 +234,5 @@ async function loadGallery() {
     console.error("Error fetching data:", error);
   }
 }
-setTimeout(loadGallery, 2000);
+
+loadGallery()
