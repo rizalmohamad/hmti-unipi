@@ -90,7 +90,7 @@
   }
 
   let header = document.querySelector("#header");
-  if (header && window.location.pathname.endsWith("index.html")) {
+  if (header) {
     const onScrollChange = () => {
       if (window.scrollY > 100) {
         header.classList.add("text-scrolled");
@@ -103,7 +103,7 @@
   }
 
   const navbar = document.querySelector(".mobile-nav-toggle");
-  if (navbar && window.location.pathname.endsWith("index.html")) {
+  if (navbar) {
     const navbarScrolled = () => {
       if (window.scrollY > 100) {
         navbar.classList.add("mobile-nav-scroll");
