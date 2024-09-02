@@ -174,38 +174,24 @@ let imageGallery = [
 ];
 
 const card = document.querySelector(".portfolio-container");
+imageGallery.forEach(item => {
+  const { category, pict, name, title } = item;
 
-async function loadImages(imageGallery) {
-  for (const item of imageGallery) {
-    const { category, pict, name, title } = item;
-
-    // Fetch the image asynchronously
-    await new Promise((resolve) => {
-      const img = new Image();
-      img.src = pict;
-      img.onload = resolve;
-      img.onerror = resolve;
-    });
-
-    card.innerHTML += `
-      <div class="col-lg-4 col-md-6 portfolio-item ${category}">
-          <div class="portfolio-wrap">
-              <img src="${pict}" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                  <h4>${name}</h4>
-                  <div class="portfolio-links">
-                      <a href="${pict}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${title}"><i class="bx bx-plus"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
+  card.innerHTML += `
+    <div class="col-lg-4 col-md-6 portfolio-item ${category}">
+        <div class="portfolio-wrap">
+            <img src="${pict}" class="img-fluid" alt="" />
+            <div class="portfolio-info">
+                <h4>${name}</h4>
+                <div class="portfolio-links">
+                    <a href="${pict}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${title}"><i class="bx bx-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     `;
-  }
-}
-
-// Call the function to load images
-loadImages(imageGallery);
-
+});
+console.log(card.innerHTML);
 
 const lightbox = GLightbox({
   selector: ".portfolio-lightbox",
