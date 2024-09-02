@@ -133,9 +133,9 @@ h6 {
   #header .header-container {
     background: #1900ff00;
   }
-  #header.header-scrolled {
-    /* background: #fff; */
-  }
+  /* #header.header-scrolled {
+    background: #fff;
+  } */
 
   #header .logo h1 a .hmti-text {
     color: #fff;

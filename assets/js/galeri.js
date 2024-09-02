@@ -104,12 +104,12 @@ let imageGallery = [
     name: "LDKO 2024",
     title: "Kegiatan LDKO 2024",
   },
-  {
-    category: "filter-ldko",
-    pict: "assets/img/kegiatan-2024/ldko-11.jpeg",
-    name: "LDKO 2024",
-    title: "Kegiatan LDKO 2024",
-  },
+  // {
+  //   category: "filter-ldko",
+  //   pict: "assets/img/kegiatan-2024/ldko-11.jpeg",
+  //   name: "LDKO 2024",
+  //   title: "Kegiatan LDKO 2024",
+  // },
   {
     category: "filter-workshop",
     pict: "assets/img/kegiatan-2024/workshop-1.jpg",
@@ -174,24 +174,38 @@ let imageGallery = [
 ];
 
 const card = document.querySelector(".portfolio-container");
-for (let image in imageGallery) {
-  const { category, pict, name, title } = imageGallery[image];
 
-  card.innerHTML += `
-    <div class="col-lg-4 col-md-6 portfolio-item ${category}">
-        <div class="portfolio-wrap">
-            <img src="${pict}" class="img-fluid" alt="" />
-            <div class="portfolio-info">
-                <h4>${name}</h4>
-                <div class="portfolio-links">
-                    <a href="${pict}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${title}"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+async function loadImages(imageGallery) {
+  for (const item of imageGallery) {
+    const { category, pict, name, title } = item;
+
+    // Fetch the image asynchronously
+    await new Promise((resolve) => {
+      const img = new Image();
+      img.src = pict;
+      img.onload = resolve;
+      img.onerror = resolve;
+    });
+
+    card.innerHTML += `
+      <div class="col-lg-4 col-md-6 portfolio-item ${category}">
+          <div class="portfolio-wrap">
+              <img src="${pict}" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                  <h4>${name}</h4>
+                  <div class="portfolio-links">
+                      <a href="${pict}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${title}"><i class="bx bx-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
     `;
+  }
 }
-console.log(card.innerHTML);
+
+// Call the function to load images
+loadImages(imageGallery);
+
 
 const lightbox = GLightbox({
   selector: ".portfolio-lightbox",
